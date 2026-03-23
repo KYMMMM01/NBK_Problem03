@@ -7,7 +7,11 @@ class Item
 {
 public:
     
-    Item() : name_(""), price_(0) {}; //기본 생성자가 있어야 함
+    Item() //기본 생성자가 있어야 함
+    {
+        name_ = "";
+        price_ = 0;
+    } 
     
     //생성자 (이름, 가격)
     Item(string name, int price)
